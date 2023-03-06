@@ -1,8 +1,9 @@
 import {DataTypes} from 'sequelize';
 import sequelize from '../config/sequelize.js';
-// import Cost from './cost.js';
 
-const Employee = sequelize.define('Employees', {
+import Cost from './cost.js';
+
+const Employee = sequelize.define('Employee', {
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -24,7 +25,9 @@ const Employee = sequelize.define('Employees', {
   }
 });
 
-// Define the relationship between Employee and Transaction
-// Employee.hasMany(Cost);
+// Define the relationship between Employee and Cost
+Cost.belongsTo(Employee, { foreignKey: 'employee_id' });
+Employee.hasMany(Cost);
+
 
 export default Employee;

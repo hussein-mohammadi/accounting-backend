@@ -1,9 +1,9 @@
 import express from 'express';
+import sequelize from './config/sequelize.js';
+
 import incomeRoutes from './routes/income.js';
 import employeeRoutes from './routes/employee.js';
-// import costRoutes from './routes/cost.js';
-
-import sequelize from './config/sequelize.js';
+import costRoutes from './routes/cost.js';
 
 
 const app = express();
