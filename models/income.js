@@ -1,9 +1,9 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/sequelize');
+import {DataTypes} from 'sequelize';
+import sequelize from '../config/sequelize.js';
 
-const Income = sequelize.define('Income', {
+const Income = sequelize.define('Incomes', {
     id: {
-        type: DataTypes.INTEGER.UNSIGNED,
+        type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
@@ -26,4 +26,4 @@ const Income = sequelize.define('Income', {
       }
 });
 
-module.exports = Income;
+export default Income;
