@@ -26,8 +26,9 @@ const Employee = sequelize.define('Employee', {
 });
 
 // Define the relationship between Employee and Cost
+
+Employee.hasMany(Cost, { foreignKey: 'employee_id' });
 Cost.belongsTo(Employee, { foreignKey: 'employee_id' });
-Employee.hasMany(Cost);
 
 
 export default Employee;

@@ -1,8 +1,6 @@
 import {DataTypes} from 'sequelize';
 import sequelize from '../config/sequelize.js';
 
-import Employee from './employee.js';
-
 const Cost = sequelize.define('Cost', {
     id: {
         type: DataTypes.INTEGER,

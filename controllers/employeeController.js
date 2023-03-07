@@ -6,13 +6,23 @@ export default class EmployeeController {
 
         try {
             const employees = await Employee.findAll();
-            if(!employees) {
-                res.json('There are no employee.');
+            
+            if(!employees.length) {
+                return res.json({ 
+                    success: true,
+                    message: 'No employee has been recorded.',
+                });
             }
-            res.json(employees);
+            res.json({
+                success: true,
+                body: employees
+            });
         } catch (error) {
             console.error(error);
-            res.status(500).json('Server error');
+            res.status(500).json({
+                success: false,
+                message: 'Server error',
+            });
         }
 
     }
@@ -22,12 +32,21 @@ export default class EmployeeController {
         try {
             const employee = await Employee.findByPk(req.params.id);
             if (!employee) {
-                return res.status(404).json('Employee not found');
+                return res.status(404).json({
+                    success: false,
+                    message: 'Employee not found.'
+                });
             }
-            res.json(employee);
+            res.json({
+                success: true,
+                body: employee
+            });
         } catch (error) {
             console.error(error);
-            res.status(500).json('Server error');
+            res.status(500).json({
+                success: false,
+                message: 'Server error',
+            });
         }
 
     }
@@ -37,13 +56,17 @@ export default class EmployeeController {
         try {
             const { title, date, amount, description } = req.body;
 
-            // Check if the employee with the given ID exists
-
             const employee = await Employee.create({ title, date, amount, description });
-            res.status(201).json(employee);
+            res.status(201).json({
+                success: true,
+                body: employee
+            });
         } catch (error) {
             console.error(error);
-            res.status(500).json('Server error');
+            res.status(500).json({
+                success: false,
+                message: 'Server error',
+            });
         }
 
     }
@@ -51,13 +74,15 @@ export default class EmployeeController {
     static async updateEmployee(req, res) {
 
         try {
-            const { title, date, amount, description } = req.body;
+            const { first_name, last_name, email } = req.body;
 
             // Check if the transaction with the given ID exists
             const employee = await Employee.findByPk(req.params.id);
-            console.log(employee)
             if (!employee) {
-            return res.status(404).json('Employee not found');
+                return res.status(404).json({
+                    success: false,
+                    message: 'Employee not found.'
+                });
             }
 
             employee.first_name = first_name;
@@ -65,10 +90,16 @@ export default class EmployeeController {
             employee.email = email;
 
             await employee.save();
-            res.json(employee);
+            res.json({
+                success: true,
+                body: employee
+            });
         } catch (error) {
             console.error(error);
-            res.status(500).json('Server error');
+            res.status(500).json({
+                success: false,
+                message: 'Server error',
+            });
         }
 
     }
@@ -78,13 +109,22 @@ export default class EmployeeController {
         try {
             const employee = await Employee.findByPk(req.params.id);
             if (!employee) {
-            return res.status(404).json('Employee not found');
+                return res.status(404).json({
+                    success: false,
+                    message: 'Employee not found.'
+                });
             }
             await employee.destroy();
-            res.json('Employee deleted');
+            res.json({
+                success: true,
+                message: 'Employee has been deleted.',
+            });
         } catch (error) {
             console.error(error);
-            res.status(500).json('Server error');
+            res.status(500).json({
+                success: false,
+                message: 'Server error',
+            });
         }
 
     }
