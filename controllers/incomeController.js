@@ -4,20 +4,34 @@ import Income from '../models/income.js';
 export default class IncomeController {
 
   static async getIncomes(req, res) {
+    
+    const page = parseInt(req.query.page) || 1; // default to page 1
+    const pageSize = parseInt(req.query.pageSize) || 10; // default to 10 items per page    
 
     try {
-      const incomes = await Income.findAll();
+      const incomesCount = await Income.count();
+      const pageCount = Math.ceil(incomesCount / pageSize);
+      const incomes = await Income.findAll({
+          offset: (page - 1) * pageSize,
+          limit: pageSize,
+      });
 
-      if(!income.length) {
+      if(!incomes.length) {
         return res.json({
           success: true,
-          message: 'No income has been recorded.',
+          message: 'No income have been recorded.',
         });
       }
       res.json({
         success: true,
-        body: incomes,
-      });
+        data: incomes,
+        pageInfo: {
+            page,
+            pageSize,
+            pageCount,
+            totalCount: incomesCount,
+        }
+    });
     } catch (error) {
       console.error(error);
       res.status(500).json({
@@ -40,7 +54,7 @@ export default class IncomeController {
       }
       res.json({
         success: true,
-        body: income,
+        data: income,
       });
     } catch (error) {
       console.error(error);
@@ -77,7 +91,7 @@ export default class IncomeController {
 
       res.status(201).json({
         success: true,
-        body: income,
+        data: income,
       });
     } catch (error) {
       console.error(error);
@@ -130,7 +144,7 @@ export default class IncomeController {
 
       res.json({
         success: true,
-        body: income
+        data: income
       });
     } catch (error) {
       console.error(error);
@@ -155,7 +169,7 @@ export default class IncomeController {
       await income.destroy();
       res.json({
         success: true,
-        message: 'Income has been deleted.',
+        message: 'Income have been deleted.',
       });
     } catch (error) {
       console.error(error);

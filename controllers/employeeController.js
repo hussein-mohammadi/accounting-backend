@@ -4,19 +4,33 @@ import Employee from '../models/employee.js';
 export default class EmployeeController {
 
     static async getEmployees(req, res) {
+        
+        const page = parseInt(req.query.page) || 1; // default to page 1
+        const pageSize = parseInt(req.query.pageSize) || 10; // default to 10 items per page    
 
         try {
-            const employees = await Employee.findAll();
+            const employeesCount = await Employees.count();
+            const pageCount = Math.ceil(employeesCount / pageSize);
+            const employees = await Employees.findAll({
+                offset: (page - 1) * pageSize,
+                limit: pageSize,
+            });
             
             if(!employees.length) {
                 return res.json({ 
                     success: true,
-                    message: 'No employee has been recorded.',
+                    message: 'No employee have been recorded.',
                 });
             }
             res.json({
                 success: true,
-                body: employees
+                data: employees,
+                pageInfo: {
+                    page,
+                    pageSize,
+                    pageCount,
+                    totalCount: employeesCount,
+                }
             });
         } catch (error) {
             console.error(error);
@@ -40,7 +54,7 @@ export default class EmployeeController {
             }
             res.json({
                 success: true,
-                body: employee
+                data: employee
             });
         } catch (error) {
             console.error(error);
@@ -78,7 +92,7 @@ export default class EmployeeController {
             res.status(201).json({
                 success: true,
                 message: 'Employee has been created.',
-                body: employee,
+                data: employee,
             });
         } catch (error) {
             console.error(error);
@@ -137,7 +151,7 @@ export default class EmployeeController {
         await employee.save();
             res.json({
                 success: true,
-                body: employee,
+                data: employee,
             });
         } catch (error) {
             console.error(error);
@@ -162,7 +176,7 @@ export default class EmployeeController {
             await employee.destroy();
             res.json({
                 success: true,
-                message: 'Employee has been deleted.',
+                message: 'Employee deleted.',
             });
         } catch (error) {
             console.error(error);
