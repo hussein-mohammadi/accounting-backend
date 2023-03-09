@@ -1,3 +1,4 @@
+import Joi from 'joi';
 import Income from '../models/income.js';
 
 export default class IncomeController {
@@ -53,10 +54,27 @@ export default class IncomeController {
 
   static async addIncome(req, res) {
 
-    try {
-      const { title, date, amount, description } = req.body;
+    const incomeSchema = Joi.object({
+      title: Joi.string().required(),
+      date: Joi.date().required(),
+      amount: Joi.number().required(),
+      description: Joi.string().required(),
+    });
 
+
+    try {
+      const { error, value } = incomeSchema.validate(req.body, { abortEarly: false });
+
+      if (error) {
+        return res.status(400).json({
+          success: false,
+          message: error.details.map((detail) => detail.message),
+        });
+      }
+
+      const { title, date, amount, description } = value;
       const income = await Income.create({ title, date, amount, description });
+
       res.status(201).json({
         success: true,
         body: income,
@@ -68,13 +86,31 @@ export default class IncomeController {
         message: 'Server error',
       });
     }
-
   }
+
 
   static async updateIncome(req, res) {
 
+    const incomeSchema = Joi.object({
+      title: Joi.string().required(),
+      date: Joi.date().required(),
+      amount: Joi.number().min(0).required(),
+      description: Joi.string(),
+    });
+
+    // Validate income data in the request body
+    const { error, value } = incomeSchema.validate(req.body);
+
+    // Check if there are any validation errors
+    if (error) {
+        return res.status(400).json({
+            success: false,
+            message: error.details[0].message,
+        });
+    }
+
     try {
-      const { title, date, amount, description } = req.body;
+      const { title, date, amount, description } = value;
   
       // Check if the transaction with the given ID exists
       const income = await Income.findByPk(req.params.id);
