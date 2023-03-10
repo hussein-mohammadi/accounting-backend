@@ -4,41 +4,49 @@ import Employee from '../models/employee.js';
 export default class EmployeeController {
 
     static async getEmployees(req, res) {
-        
-        const page = parseInt(req.query.page) || 1; // default to page 1
-        const pageSize = parseInt(req.query.pageSize) || 10; // default to 10 items per page    
 
         try {
-            const employeesCount = await Employees.count();
-            const pageCount = Math.ceil(employeesCount / pageSize);
-            const employees = await Employees.findAll({
-                offset: (page - 1) * pageSize,
-                limit: pageSize,
+            // Parse pagination parameters
+            const { page = 1, limit = 10 } = req.query;
+            const offset = (page - 1) * limit;
+          
+            // Parse filter parameters
+            const { filterParam } = req.query;
+          
+            const whereClause = {};
+            if (filterParam) {
+                whereClause.columnName = filterParam;
+            }
+          
+            const employee = await Employee.findAndCountAll({
+                where: whereClause,
+                limit: limit,
+                offset: offset,
             });
-            
-            if(!employees.length) {
-                return res.json({ 
+          
+            if (!employee.rows.length) {
+                return res.json({
                     success: true,
-                    message: 'No employee have been recorded.',
+                    message: "No employee has been recorded.",
                 });
             }
             res.json({
                 success: true,
-                data: employees,
-                pageInfo: {
-                    page,
-                    pageSize,
-                    pageCount,
-                    totalCount: employeesCount,
-                }
+                data: employee.rows,
+                pagination: {
+                    page: page,
+                    limit: limit,
+                    totalRows: employee.count,
+                },
             });
-        } catch (error) {
-            console.error(error);
-            res.status(500).json({
-                success: false,
-                message: 'Server error',
-            });
-        }
+          } catch (error) {
+                console.error(error);
+                res.status(500).json({
+                    success: false,
+                    message: "Server error",
+                });
+          }
+          
 
     }
   
@@ -68,25 +76,24 @@ export default class EmployeeController {
   
     static async addEmployee(req, res) {
 
-        // Define a schema for validating employee data
-        const employeeSchema = Joi.object({
-            first_name: Joi.string().required(),
-            last_name: Joi.string().required(),
-            email: Joi.string().email().required(),
-        });
-
-        // Validate employee data in the request body
-        const { error, value } = employeeSchema.validate(req.body);
-
-        // Check if there are any validation errors
-        if (error) {
-            return res.status(400).json({
-                success: false,
-                message: error.details[0].message,
-            });
-        }
-
         try {
+            // Define a schema for validating employee data
+            const employeeSchema = Joi.object({
+                first_name: Joi.string().required(),
+                last_name: Joi.string().required(),
+                email: Joi.string().email().required(),
+            });
+
+            // Validate employee data in the request body
+            const { error, value } = employeeSchema.validate(req.body);
+
+            // Check if there are any validation errors
+            if (error) {
+                return res.status(400).json({
+                    success: false,
+                    message: error.details[0].message,
+                });
+            }
             const { first_name, last_name, email } = value;
             const employee = await Employee.create({ first_name, last_name, email });
             res.status(201).json({

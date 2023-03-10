@@ -5,33 +5,47 @@ export default class IncomeController {
 
   static async getIncomes(req, res) {
     
-    const page = parseInt(req.query.page) || 1; // default to page 1
-    const pageSize = parseInt(req.query.pageSize) || 10; // default to 10 items per page    
-
     try {
-      const incomesCount = await Income.count();
-      const pageCount = Math.ceil(incomesCount / pageSize);
-      const incomes = await Income.findAll({
-          offset: (page - 1) * pageSize,
-          limit: pageSize,
+      // Parse pagination parameters
+      const { page = 1, limit = 10 } = req.query;
+      const offset = (page - 1) * limit;
+
+      // Parse filter parameters
+      const { start_date, end_date } = req.query;
+
+      const whereClause = {};
+      if (start_date) {
+        whereClause.date = { [Op.gte]: new Date(start_date) };
+      }
+
+      if (end_date) {
+        if (!whereClause.date) {
+          whereClause.date = {};
+        }
+        whereClause.date[Op.lte] = new Date(end_date);
+      }
+
+      const income = await Income.findAndCountAll({
+        where: whereClause,
+        limit: limit,
+        offset: offset,
       });
 
-      if(!incomes.length) {
+      if (!income.rows.length) {
         return res.json({
           success: true,
-          message: 'No income have been recorded.',
+          message: "No income has been recorded.",
         });
       }
       res.json({
         success: true,
-        data: incomes,
-        pageInfo: {
-            page,
-            pageSize,
-            pageCount,
-            totalCount: incomesCount,
-        }
-    });
+        data: income.rows,
+        pagination: {
+          page: page,
+          limit: limit,
+          totalRows: income.count,
+        },
+      });
     } catch (error) {
       console.error(error);
       res.status(500).json({
@@ -68,17 +82,15 @@ export default class IncomeController {
 
   static async addIncome(req, res) {
 
-    const incomeSchema = Joi.object({
-      title: Joi.string().required(),
-      date: Joi.date().required(),
-      amount: Joi.number().required(),
-      description: Joi.string().required(),
-    });
-
-
     try {
-      const { error, value } = incomeSchema.validate(req.body, { abortEarly: false });
+      const incomeSchema = Joi.object({
+        title: Joi.string().required(),
+        date: Joi.date().required(),
+        amount: Joi.number().required(),
+        description: Joi.string().required(),
+      });
 
+      const { error, value } = incomeSchema.validate(req.body, { abortEarly: false });
       if (error) {
         return res.status(400).json({
           success: false,
@@ -105,25 +117,24 @@ export default class IncomeController {
 
   static async updateIncome(req, res) {
 
-    const incomeSchema = Joi.object({
-      title: Joi.string().required(),
-      date: Joi.date().required(),
-      amount: Joi.number().min(0).required(),
-      description: Joi.string(),
-    });
-
-    // Validate income data in the request body
-    const { error, value } = incomeSchema.validate(req.body);
-
-    // Check if there are any validation errors
-    if (error) {
-        return res.status(400).json({
-            success: false,
-            message: error.details[0].message,
-        });
-    }
-
     try {
+      const incomeSchema = Joi.object({
+        title: Joi.string().required(),
+        date: Joi.date().required(),
+        amount: Joi.number().min(0).required(),
+        description: Joi.string(),
+      });
+
+      // Validate income data in the request body
+      const { error, value } = incomeSchema.validate(req.body);
+
+      // Check if there are any validation errors
+      if (error) {
+          return res.status(400).json({
+              success: false,
+              message: error.details[0].message,
+          });
+      }
       const { title, date, amount, description } = value;
   
       // Check if the transaction with the given ID exists

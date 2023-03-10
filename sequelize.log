@@ -3973,3 +3973,607 @@ Executing (default): PRAGMA INDEX_LIST(`Employees`)
 Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
 Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
 Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 210, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 210, 10;
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT count(*) AS `count` FROM `Costs` AS `Cost` WHERE (`Cost`.`date` >= '2022-01-01 00:00:00.000 +00:00' AND `Cost`.`date` <= '2022-01-31 00:00:00.000 +00:00');
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `employee_id`, `createdAt`, `updatedAt` FROM `Costs` AS `Cost` WHERE (`Cost`.`date` >= '2022-01-01 00:00:00.000 +00:00' AND `Cost`.`date` <= '2022-01-31 00:00:00.000 +00:00') LIMIT 0, '10';
+Executing (default): SELECT count(*) AS `count` FROM `Costs` AS `Cost` WHERE (`Cost`.`date` >= '2023-01-01 00:00:00.000 +00:00' AND `Cost`.`date` <= '2023-05-31 00:00:00.000 +00:00');
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `employee_id`, `createdAt`, `updatedAt` FROM `Costs` AS `Cost` WHERE (`Cost`.`date` >= '2023-01-01 00:00:00.000 +00:00' AND `Cost`.`date` <= '2023-05-31 00:00:00.000 +00:00') LIMIT 0, '10';
+Executing (default): SELECT `id`, `first_name`, `last_name`, `email`, `createdAt`, `updatedAt` FROM `Employees` AS `Employee` WHERE `Employee`.`id` = '1';
+Executing (default): INSERT INTO `Costs` (`id`,`title`,`date`,`amount`,`description`,`employee_id`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4,$5,$6,$7);
+Executing (default): SELECT count(*) AS `count` FROM `Costs` AS `Cost` WHERE (`Cost`.`date` >= '2023-01-01 00:00:00.000 +00:00' AND `Cost`.`date` <= '2023-05-31 00:00:00.000 +00:00');
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `employee_id`, `createdAt`, `updatedAt` FROM `Costs` AS `Cost` WHERE (`Cost`.`date` >= '2023-01-01 00:00:00.000 +00:00' AND `Cost`.`date` <= '2023-05-31 00:00:00.000 +00:00') LIMIT 0, '10';
+Executing (default): SELECT count(*) AS `count` FROM `Costs` AS `Cost` WHERE (`Cost`.`date` >= '2023-01-05 00:00:00.000 +00:00' AND `Cost`.`date` <= '2023-05-31 00:00:00.000 +00:00');
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `employee_id`, `createdAt`, `updatedAt` FROM `Costs` AS `Cost` WHERE (`Cost`.`date` >= '2023-01-05 00:00:00.000 +00:00' AND `Cost`.`date` <= '2023-05-31 00:00:00.000 +00:00') LIMIT 0, '10';
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
