@@ -4577,3 +4577,341 @@ Executing (default): PRAGMA INDEX_LIST(`Employees`)
 Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
 Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
 Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT count(*) AS `count` FROM `Incomes` AS `Incomes`;
+Executing (default): SELECT `id`, `title`, `date`, `amount`, `description`, `createdAt`, `updatedAt` FROM `Incomes` AS `Incomes` LIMIT 0, 10;
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Users';
+Executing (default): CREATE TABLE IF NOT EXISTS `Users` (`user_id` INTEGER PRIMARY KEY AUTOINCREMENT, `first_name` VARCHAR(255), `last_name` DATETIME, `email` INTEGER NOT NULL, `password` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL);
+Executing (default): PRAGMA INDEX_LIST(`Users`)
+Executing (default): SELECT `user_id`, `first_name`, `last_name`, `email`, `password`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'test@email.com' LIMIT 1;
+Executing (default): INSERT INTO `Users` (`user_id`,`first_name`,`last_name`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4,$5,$6);
+Executing (default): SELECT `user_id`, `first_name`, `last_name`, `email`, `password`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'mdaie@email.com' LIMIT 1;
+Executing (default): INSERT INTO `Users` (`user_id`,`first_name`,`last_name`,`email`,`password`,`createdAt`,`updatedAt`) VALUES (NULL,$1,$2,$3,$4,$5,$6);
+Executing (default): SELECT `user_id`, `first_name`, `last_name`, `email`, `password`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'mdaie@email.com' LIMIT 1;
+Executing (default): SELECT `user_id`, `first_name`, `last_name`, `email`, `password`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'mdaie@email.com' LIMIT 1;
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Users';
+Executing (default): PRAGMA INDEX_LIST(`Users`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Users';
+Executing (default): PRAGMA INDEX_LIST(`Users`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Incomes';
+Executing (default): PRAGMA INDEX_LIST(`Incomes`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Employees';
+Executing (default): PRAGMA INDEX_LIST(`Employees`)
+Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_Employees_1`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Costs';
+Executing (default): PRAGMA INDEX_LIST(`Costs`)
+Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='Users';
+Executing (default): PRAGMA INDEX_LIST(`Users`)

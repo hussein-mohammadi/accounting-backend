@@ -1,9 +1,10 @@
 import express from 'express';
 import sequelize from './config/sequelize.js';
 
-import incomeRoutes from './routes/income.js';
-import employeeRoutes from './routes/employee.js';
-import costRoutes from './routes/cost.js';
+import incomeRoutes from './routes/income.route.js';
+import employeeRoutes from './routes/employee.route.js';
+import costRoutes from './routes/cost.route.js';
+import Authentication from './routes/authentication.route.js';
 
 
 const app = express();
@@ -21,6 +22,7 @@ app.use(express.json());
 app.use(incomeRoutes);
 app.use(costRoutes);
 app.use(employeeRoutes);
+app.use(Authentication);
 
 sequelize.sync()
   .then(() => {

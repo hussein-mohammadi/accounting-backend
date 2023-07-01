@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import Income from '../models/income.js';
+import Income from '../models/income.model.js';
 
 export default class IncomeController {
 

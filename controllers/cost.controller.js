@@ -1,7 +1,7 @@
 import Joi from "joi";
 
-import Cost from "../models/cost.js";
-import Employee from "../models/employee.js";
+import Cost from "../models/cost.model.js";
+import Employee from "../models/employee.model.js";
 import { Op } from "sequelize";
 
 export default class CostController {

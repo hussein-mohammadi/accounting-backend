@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import Employee from '../models/employee.js';
+import Employee from '../models/employee.model.js';
 
 export default class EmployeeController {
 

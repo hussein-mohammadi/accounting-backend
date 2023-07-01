@@ -1,7 +1,7 @@
 import {DataTypes} from 'sequelize';
 import sequelize from '../config/sequelize.js';
 
-import Cost from './cost.js';
+import Cost from './cost.model.js';
 
 const Employee = sequelize.define('Employee', {
   id: {

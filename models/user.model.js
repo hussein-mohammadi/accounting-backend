@@ -1,34 +1,29 @@
 import {DataTypes} from 'sequelize';
 import sequelize from '../config/sequelize.js';
 
-const Cost = sequelize.define('Cost', {
-    id: {
+const User = sequelize.define('User', {
+    user_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
     },
-    title: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    date: {
-        type: DataTypes.DATE,
-        allowNull: false
-    },
-    amount: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
-    description: {
+    first_name: {
         type: DataTypes.STRING,
         allowNull: true
     },
-    employee_id: {
+    last_name: {
+        type: DataTypes.DATE,
+        allowNull: true
+    },
+    email: {
         type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    password: {
+        type: DataTypes.STRING,
         allowNull: false
     }
 });
 
-
-export default Cost;
+export default User;
